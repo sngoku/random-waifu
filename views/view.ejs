@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Random Pics</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon/favicon.ico" type="x-icon">
+</head>
+<body style="text-align: center;">
+    <div style="margin: 0.5rem;">
+        <img style="max-width: auto; max-height: 720px;" src=<%= imageUrl %>>
+    </div>
+    
+    <div style="position: absolute; bottom: 0; left: 40%;">
+        <form action="/" method="GET" style="display: inline-block;">
+            <button type="submit" style="text-align: center; margin: 0.75rem 1.5rem; position: relative;" class="btn btn-block btn-info">Home</button>
+        </form>
+        <form action="/next" method="POST" style="display: inline-block;">
+            <button type="submit" style="text-align: center; margin: 0.75rem 1.5rem; margin-left: 3rem; position: relative;" class="btn btn-block btn-primary">Next</button>
+        </form>
+    </div>
+</body>
+</html>
