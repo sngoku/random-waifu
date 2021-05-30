@@ -16,7 +16,11 @@ app.get('/', function(req, res) {
 app.post('/', function(req, res) {
     const type = req.body.input1;
     const category = req.body.input2;
-    url = 'https://waifu.now.sh/' + type + '/' + category;
+
+    url = 'https://waifu.vercel.app/' + type + '/' + category;
+
+    // if it doesnt send data then use:
+    //url = 'https://waifu.now.sh/' + type + '/' + category;
 
     res.render('view', { imageUrl : url });
 });
